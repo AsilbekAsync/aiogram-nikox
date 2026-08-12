@@ -1,0 +1,5 @@
+start: |
+  Assalomu alaykum, {full_name}!
+  Botimizga xush kelibsiz.
+
+unknown: "Kechirasiz, bu buyruqni tushunmadim."

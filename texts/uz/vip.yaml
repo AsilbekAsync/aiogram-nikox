@@ -1,0 +1,25 @@
+vip_info: |
+  💎 VIP a'zolik imtiyozlari:
+  • Barcha so'rovlar va lichka ochish BEPUL
+  • Xos kanali va maxfiy anketalar kanaliga a'zolik
+  • Ko'proq so'rov yuborish imkoniyati
+  • Maxsus filtrlar orqali anketalarni izlash
+
+  Joriy holat: {status}
+
+  Quyidagi ta'riflardan birini tanlang:
+
+btn_vip_1_day: "1 kunlik ({price} so'm)"
+btn_vip_1_week: "1 haftalik ({price} so'm)"
+btn_vip_1_month: "1 oylik ({price} so'm)"
+
+vip_active: "✅ Aktiv (Tugash vaqti: {expires_at})"
+vip_inactive: "❌ Faol emas"
+
+not_enough_balance: |
+  Balansingizda yetarli mablag' yo'q!
+  Joriy balans: {balance} so'm
+  Kerakli summa: {price} so'm
+  Iltimos, hisobingizni to'ldiring.
+
+vip_success: "🎉 Tabriklaymiz! Siz VIP a'zoga aylandingiz. Endi barcha imtiyozlardan foydalanishingiz mumkin."

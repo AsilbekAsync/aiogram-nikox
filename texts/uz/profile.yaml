@@ -1,0 +1,55 @@
+btn_male: "👨 Erkak"
+btn_female: "👩 Ayol"
+btn_cancel: "❌ Bekor qilish"
+btn_confirm: "✅ Tasdiqlash"
+btn_restart: "❌ Qayta kiritish"
+
+ask_gender: "Jinsingizni tanlang:"
+ask_age: "Yoshingizni kiriting (masalan, 25):"
+ask_height: "Bo'yingizni kiriting (sm, masalan, 175):"
+ask_weight: "Vazningizni kiriting (kg, masalan, 70):"
+ask_nationality: "Millatingizni kiriting (masalan, O'zbek):"
+ask_marital_status: "Oilaviy holatingizni kiriting (masalan, Uylanmagan, Ajrashgan):"
+ask_location: "Hozirda yashayotgan manzilingizni kiriting (Viloyat, shahar):"
+ask_original_location: "Asli qayerliksiz? (Viloyat, shahar):"
+ask_religion: "Namoz o'qiysizmi? (Ha/Yo'q yoki batafsil):"
+ask_languages: "Nechta til bilasiz? (raqam bilan, masalan, 2):"
+ask_bio: "O'zingiz haqingizda qisqacha yozing:"
+ask_partner: "Bo'lajak turmush o'rtog'ingiz uchun talablaringiz:"
+ask_filled_by: "Anketani kim to'ldiryapti? (O'zim / Vakilim):"
+
+ask_children: "Farzandlaringiz soni nechta? (Yo'q bo'lsa 0):"
+ask_hijab: "Ro'mol o'raysizmi? (Ha/Yo'q):"
+ask_relocation: "Boshqa joyga ko'chib o'tishga tayyormisiz? (Ha/Yo'q):"
+ask_second_wife: "Ikkinchi xotin bo'lishga rozimisiz? (Ha/Yo'q):"
+
+err_age: "Yosh 18 dan 99 gacha bo'lishi kerak. Iltimos to'g'ri kiriting:"
+err_height: "Bo'y 100 dan 250 sm gacha bo'lishi kerak. Iltimos to'g'ri kiriting:"
+err_weight: "Vazn 30 dan 200 kg gacha bo'lishi kerak. Iltimos to'g'ri kiriting:"
+err_langs: "Tillar soni 1 dan 10 gacha bo'lishi kerak. Iltimos to'g'ri kiriting:"
+err_children: "Farzandlar soni 0 dan 10 gacha bo'lishi kerak. Iltimos to'g'ri kiriting:"
+err_number: "Iltimos, faqat raqam kiriting."
+
+preview_header: "Sizning anketangiz tayyor. Quyida tanishing:"
+preview_template: |
+  #{anketa}
+  Jins: {gender}
+  Yosh: {age}
+  Bo'y: {height} sm
+  Vazn: {weight} kg
+  Millat: {nationality}
+  Oilaviy holat: {marital_status}
+  Manzil: {location}
+  Asli: {original_location}
+  Namoz: {religion}
+  Tillar: {languages_count}
+  O'zi haqida: {bio}
+  Talablar: {partner_requirements}
+  To'ldirdi: {filled_by}
+preview_template_female: |
+  Farzandlar: {children_count}
+  Ro'mol: {hijab}
+  Ko'chish: {relocation}
+  2-ro'zg'or: {second_wife}
+
+profile_saved: "Profilingiz saqlandi va maxfiy anketalar bo'limiga qo'shildi!"

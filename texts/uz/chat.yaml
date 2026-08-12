@@ -1,0 +1,10 @@
+no_chats: "Sizda hozircha faol chatlar yo'q."
+chat_list: "💬 Sizning faol chatlaringiz:\nIltimos, pastdagi tugmalardan birini tanlang."
+
+chat_joined: "Siz {anketa} bilan chatga kirdingiz. Yozishingiz mumkin. Chiqish uchun '🔙 Orqaga' tugmasini bosing."
+chat_left: "Chatdan chiqdingiz."
+
+msg_forwarded_from: "📩 Yangi xabar ({anketa} dan):\n"
+msg_not_sent: "Xabar yetkazilmadi. Ehtimol, chat yopilgan yoki xato yuz berdi."
+
+btn_back: "🔙 Orqaga"

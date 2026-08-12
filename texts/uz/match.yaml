@@ -1,0 +1,37 @@
+ask_anketa_number: "So'rov yubormoqchi bo'lgan anketa raqamini kiriting (masalan, #1A2B3C):"
+anketa_not_found: "Bunday raqamli anketa topilmadi yoki u nofaol."
+own_anketa_error: "O'zingizga so'rov yubora olmaysiz."
+gender_error: "Faqat o'zga jins vakillariga so'rov yuborish mumkin."
+
+already_sent: "Siz bu anketaga allaqachon so'rov yuborgansiz (holati: {status})."
+
+not_enough_balance: |
+  So'rov yuborish narxi: {price} so'm.
+  Balansingizda mablag' yetarli emas. Iltimos, hisobingizni to'ldiring.
+  (VIP a'zolar uchun so'rov yuborish bepul).
+
+request_sent: "✅ So'rov muvaffaqiyatli yuborildi! Kuting, qarshi tomon javob berishi bilan sizga xabar beramiz."
+
+new_request_notify: |
+  📨 Sizga {anketa} raqamli anketadan yangi so'rov keldi!
+  
+  Jins: {gender}
+  Yosh: {age}
+  Bo'y: {height} sm
+  Vazn: {weight} kg
+  Manzil: {location}
+  O'zi haqida: {bio}
+
+btn_accept: "✅ Qabul qilish"
+btn_reject: "❌ Rad etish"
+
+request_accepted: "✅ Siz so'rovni qabul qildingiz! Endi chat orqali suhbatlashishingiz mumkin."
+request_rejected: "❌ Siz so'rovni rad etdingiz."
+
+notify_accepted: "🎉 Tabriklaymiz! {anketa} sizning so'rovingizni qabul qildi. Endi ular bilan chat orqali suhbatlashishingiz mumkin."
+notify_rejected: "Hurmatli foydalanuvchi, {anketa} sizning so'rovingizni rad etdi. So'rov uchun to'langan mablag' balansingizga qaytarildi."
+
+chat_instructions: |
+  💬 Chat boshlandi!
+  Suhbat vaqti: {days} kun.
+  Ushbu bot orqali yozgan barcha xabarlaringiz qarshi tomonga yetkaziladi.

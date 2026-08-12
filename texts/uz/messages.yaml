@@ -1,5 +1,15 @@
-start: |
+start_unverified: |
+  Botdan foydalanish uchun telefon raqamingizni kontakt sifatida yuboring
+
+welcome_verified: |
+  Telefon raqamingiz tasdiqlandi! NIKOH kanalining rasmiy botiga xush kelibsiz.
+  Hisobingizga {bonus} so‘m bonus qo‘shildi.
+  Botning barcha funksiyalaridan to‘liq foydalanish uchun Profil bo‘limini to‘ldiring.
+
+welcome_back: |
   Assalomu alaykum, {full_name}!
-  Botimizga xush kelibsiz.
+  Botimizga yana xush kelibsiz.
+
+btn_send_contact: "📞 Telefon raqamni yuborish"
 
 unknown: "Kechirasiz, bu buyruqni tushunmadim."

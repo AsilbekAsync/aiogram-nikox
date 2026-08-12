@@ -41,8 +41,30 @@ async def main():
     bot = Bot(token=BOT_TOKEN)
     storage = SQLAlchemyStorage()
     dp = Dispatcher(storage=storage)
+    
+    from middlewares.db import DbSessionMiddleware
+    from database.engine import session_factory
+    
+    dp.update.middleware(DbSessionMiddleware(session_factory))
 
+    from handlers.contact import router as contact_router
+    from handlers.profile import router as profile_router
+    from handlers.wallet import router as wallet_router
+    from handlers.vip import router as vip_router
+    from handlers.search import router as search_router
+    from handlers.match import router as match_router
+    from handlers.chat import router as chat_router
+    from handlers.admin import router as admin_router
+
+    dp.include_router(admin_router)
     dp.include_router(start_router)
+    dp.include_router(contact_router)
+    dp.include_router(profile_router)
+    dp.include_router(wallet_router)
+    dp.include_router(vip_router)
+    dp.include_router(search_router)
+    dp.include_router(match_router)
+    dp.include_router(chat_router)
     dp.include_router(unknown_router)
 
     await bot.delete_webhook(drop_pending_updates=True)

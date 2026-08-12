@@ -1,0 +1,32 @@
+search_info: |
+  🔍 Anketa qidirish bo'limiga xush kelibsiz!
+  
+  Bu yerda siz o'zingizga mos anketalarni qidirib topishingiz mumkin.
+  Qidiruv tizimidan foydalanish uchun bir martalik to'lov talab qilinadi: {price} so'm.
+  (VIP a'zolar uchun qidiruv bepul)
+  
+  Sizning joriy ruxsatingiz: {access_status}
+
+access_granted: "✅ Ruxsat berilgan"
+access_denied: "❌ Ruxsat yo'q"
+
+btn_buy_access: "🔓 Qidiruvni faollashtirish ({price} so'm)"
+
+not_enough_balance: |
+  Balansingizda yetarli mablag' yo'q!
+  Joriy balans: {balance} so'm
+  Kerakli summa: {price} so'm
+  Iltimos, hisobingizni to'ldiring.
+
+access_success: "🎉 Qidiruv tizimi faollashtirildi!"
+
+ask_search_gender: "Qaysi jinsdagi anketalarni qidirmoqchisiz?"
+ask_search_age_min: "Yoshi nechadan boshlansin?"
+ask_search_age_max: "Yoshi nechagacha bo'lsin?"
+
+search_no_results: "Bunday parametrlar bo'yicha anketa topilmadi."
+search_results: "Topildi: {count} ta anketa.\nAnketalarni ko'rish:"
+
+btn_next: "➡️ Keyingi"
+btn_prev: "⬅️ Oldingi"
+btn_request: "📨 So'rov yuborish"

@@ -11,7 +11,7 @@ from database.base import Base
 from database.engine import engine
 from handlers.start import router as start_router
 from handlers.unknown import router as unknown_router
-import models  # noqa: F401
+import models  # pyright: ignore[reportUnusedImport]
 from states.storage import SQLAlchemyStorage
 
 logging.basicConfig(

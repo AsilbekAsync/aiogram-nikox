@@ -7,7 +7,7 @@ from sqlalchemy.ext.asyncio import create_async_engine
 
 from config import DATABASE_URL
 from database.base import Base
-import models  # noqa: F401
+import models  # pyright: ignore[reportUnusedImport]
 
 
 config = context.config

@@ -5,7 +5,7 @@ import yaml
 _TEXTS_DIR = Path(__file__).parent
 
 
-def load(lang: str = "uz", category: str = "messages") -> dict:
+def load(lang: str = "uz", category: str = "messages") -> dict[str, str]:
     file_path = _TEXTS_DIR / lang / f"{category}.yaml"
     if not file_path.exists():
         raise FileNotFoundError(f"Tarjima fayli topilmadi: {file_path}")

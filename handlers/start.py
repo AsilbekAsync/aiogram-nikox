@@ -10,6 +10,7 @@ router = Router()
 
 @router.message(CommandStart())
 async def start_cmd(message: Message):
+    assert message.from_user is not None
     await message.answer(
         t["start"].format(full_name=message.from_user.full_name)
     )

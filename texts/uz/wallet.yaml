@@ -1,0 +1,41 @@
+wallet_info: |
+  💰 Hisobingiz:
+  Balans: {balance} so'm
+
+  ⚠️ Hisobdagi mablag' kartaga qaytarilmaydi, boshqa foydalanuvchiga o'tkazilmaydi. Faqat ichki xizmatlarga ishlatiladi.
+
+deposit_info: |
+  Quyidagi to'lov usullaridan birini tanlang.
+  Har bir usul uchun minimal summa va bonuslar haqida ma'lumot tanlaganingizdan so'ng ko'rsatiladi.
+
+btn_uzcard: "💳 Uzcard / Humo (Qo'lda to'lov)"
+
+deposit_uzcard_instructions: |
+  Iltimos, quyidagi karta raqamiga kerakli summani o'tkazing:
+  8600 1234 5678 9012 (Falonchiyev P.)
+
+  To'lovni amalga oshirgach, to'lov chekining (kvitansiya) rasmini shu yerga yuboring.
+  Adminlar chekni tekshirib balansingizni to'ldirib qo'yishadi.
+
+  Minimal to'lov: {min_deposit} so'm
+
+  Bonuslar:
+  300,000 so'mdan yuqori: 10%
+  500,000 so'mdan yuqori: 15%
+  1,000,000 so'mdan yuqori: 20%
+
+receipt_received: "✅ Chek qabul qilindi! Adminlarimiz uni tez orada tekshirib balansingizni to'ldirib qo'yishadi. Iltimos, kuting."
+
+history_empty: "Sizda hozircha tranzaksiyalar yo'q."
+history_header: "📜 Tranzaksiyalar tarixi:\n\n"
+history_item: "📅 {date}\n💸 {amount} so'm ({type})\n📝 {desc}\n\n"
+
+earn_info: |
+  Do'stlaringizni taklif qilib, pul toping!
+  Har bir taklif qilingan do'stingiz (ro'yxatdan o'tgach) uchun {bonus} so'm bonus oling!
+
+  Sizning referal havolangiz:
+  https://t.me/{bot_username}?start={referral_code}
+
+  Jami taklif qilingan do'stlar: {count}
+  Ishlab topilgan bonuslar: {total_earned} so'm

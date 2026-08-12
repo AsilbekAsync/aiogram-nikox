@@ -1,6 +1,8 @@
 from aiogram import Router, F
-from aiogram.filters import Command
+from aiogram.filters import Command, StateFilter
+from aiogram.fsm.state import any_state
 from aiogram.types import Message
+from aiogram.fsm.context import FSMContext
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, func
 
@@ -14,7 +16,22 @@ router = Router()
 def is_admin(user_id: int) -> bool:
     return user_id in ADMIN_IDS
 
-@router.message(Command("stats"))
+@router.message(Command("admin"), StateFilter(any_state))
+async def admin_panel(message: Message, state: FSMContext):
+    if not is_admin(message.from_user.id):
+        return
+        
+    await state.clear()
+    text = (
+        "👑 Admin paneliga xush kelibsiz.\n\n"
+        "Mavjud buyruqlar:\n"
+        "/stats - Bot statistikasi\n"
+        "/approve <id> <summa> - To'lovni tasdiqlash\n"
+        "/reject <id> - To'lovni rad etish"
+    )
+    await message.answer(text)
+
+@router.message(Command("stats"), StateFilter(any_state))
 async def show_stats(message: Message, session: AsyncSession):
     if not is_admin(message.from_user.id):
         return
@@ -34,7 +51,7 @@ async def show_stats(message: Message, session: AsyncSession):
     )
     await message.answer(text)
 
-@router.message(Command("approve"))
+@router.message(Command("approve"), StateFilter(any_state))
 async def approve_deposit(message: Message, session: AsyncSession):
     if not is_admin(message.from_user.id):
         return
@@ -77,7 +94,7 @@ async def approve_deposit(message: Message, session: AsyncSession):
     except Exception:
         pass
 
-@router.message(Command("reject"))
+@router.message(Command("reject"), StateFilter(any_state))
 async def reject_deposit(message: Message, session: AsyncSession):
     if not is_admin(message.from_user.id):
         return

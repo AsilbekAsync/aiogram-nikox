@@ -1,6 +1,8 @@
 from aiogram import Router
-from aiogram.filters import CommandStart, CommandObject
+from aiogram.filters import CommandStart, CommandObject, StateFilter, Command
+from aiogram.fsm.state import any_state
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton
+from aiogram.fsm.context import FSMContext
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from texts.loader import load
@@ -9,8 +11,9 @@ from services.user import get_user_by_tg_id, create_user, get_user_by_referral_c
 t = load("uz")
 router = Router()
 
-@router.message(CommandStart())
-async def start_cmd(message: Message, command: CommandObject, session: AsyncSession):
+@router.message(CommandStart(), StateFilter(any_state))
+async def start_cmd(message: Message, command: CommandObject, session: AsyncSession, state: FSMContext):
+    await state.clear()
     assert message.from_user is not None
     tg_id = message.from_user.id
     
@@ -33,3 +36,9 @@ async def start_cmd(message: Message, command: CommandObject, session: AsyncSess
     else:
         from keyboards.main import get_main_menu_kb
         await message.answer(t["welcome_back"].format(full_name=user.full_name), reply_markup=get_main_menu_kb())
+
+@router.message(Command("cancel"), StateFilter(any_state))
+async def cancel_cmd(message: Message, state: FSMContext):
+    await state.clear()
+    from keyboards.main import get_main_menu_kb
+    await message.answer("Barcha amallar bekor qilindi.", reply_markup=get_main_menu_kb())
